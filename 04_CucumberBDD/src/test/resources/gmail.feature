@@ -37,3 +37,11 @@ Feature: Login to Gmail, Google search
     When The user wants to search for renastech.com
     And The user wants to click on I'm feeling lucky button
     Then The user wants to verify that the browser is redirected to renastech
+
+
+
+  Scenario:  Verify that the user is able to go to Renastech using google search button
+    Given The user wants to go to Google.com
+    When The user wants to search for renastech
+    And The user wants to click on Search Button
+    Then The user wants to verify that the browser is redirected to renastech

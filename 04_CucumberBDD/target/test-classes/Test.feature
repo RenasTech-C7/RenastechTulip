@@ -33,4 +33,3 @@ Feature: This feature is about login functionality of Amazon
     Then The user wants to click on login button
     And The user wants to verify that login was unsuccessful
 
-    
