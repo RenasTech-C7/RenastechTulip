@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 public class ConfigurationsReader {
-
+    //We created this because we need to read our Configuration.properties file
 
     private static Properties configFile;
     static {
