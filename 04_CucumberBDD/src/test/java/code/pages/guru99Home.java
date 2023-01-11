@@ -26,7 +26,7 @@ public class guru99Home extends BrowserUtils {
 
     }
 
-    public WebElement getBuyNowButton() {
-        return buyNowButton;
+    public void getBuyNowButton() {
+       buyNowButton.click();
     }
 }

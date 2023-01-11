@@ -6,4 +6,3 @@ Feature: Payment Gateway functional test
     Then The user wants to provide requested payment information
     And The user wants to click on pay now
     Then The user wants to verify order is successful
-    
