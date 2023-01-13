@@ -26,4 +26,14 @@ Feature: Payment Gateway functional test
     And The user wants to click on pay now
     Then The user wants to verify message as "Payment successfull!"
 
+    @dryRunTest @Regression
+  Scenario: Verify that user can buy multiple products
+    Given The user wants to go to Payment Gateway Website
+    When The user wants to buy elephant toy as "5"
+    Then The user wants to enter Credit Card Number as "5454545454545454"
+    And The user wants to enter Expiration Month as "11"
+    And The user wants to enter Expiration Year as "2026"
+    And The user wants to enter CVV Code as "189"
+    And The user wants to click on pay now
+    Then The user wants to verify message as "Payment successfull!"
 
