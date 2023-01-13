@@ -1,5 +1,8 @@
 Feature: Payment Gateway functional test
+#No matter what we always have to start with Feature keyword. Otherwise the whole file will break
 
+
+  @BuyingProduct_TC1 @Regression
   Scenario: Verify that user can buy an Elephant toy
     Given The user wants to go to Payment Gateway Website
     When The user wants to buy an elephant toy
@@ -12,7 +15,7 @@ Feature: Payment Gateway functional test
     #Third step we provided all required information
     #Fourth step - We verified that order is success
 
-
+  @BuyingProduct_TC2 @Regression @Smoke
   Scenario: Verify that user can buy multiple products
     Given The user wants to go to Payment Gateway Website
     When The user wants to buy elephant toy as "5"
