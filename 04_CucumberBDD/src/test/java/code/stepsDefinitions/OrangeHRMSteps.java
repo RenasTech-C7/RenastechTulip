@@ -9,6 +9,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.util.List;
 import java.util.Map;
 
 public class OrangeHRMSteps extends BrowserUtils {
@@ -74,5 +75,23 @@ public class OrangeHRMSteps extends BrowserUtils {
         orangeHRMHome.setPassword(dataTable.get("Password"));
         orangeHRMHome.setConfirmPassword(dataTable.get("Password"));
         orangeHRMHome.setStatusDropdown(dataTable.get("Status"));
+    }
+
+    @Then("The user wants to add employee's first and last name using a List Method")
+    public void the_user_wants_to_add_employee_s_first_and_last_name_using_a_list_method(List<List<String>> dataTable) {
+     //We need to use Nested list in order to use dataTable in feature file(OrangeHRM.feature)
+                                            //Row  Column
+        orangeHRMHome.setFirstName(dataTable.get(2).get(0));
+        orangeHRMHome.setLastName(dataTable.get(2).get(1));
+    }
+    @Then("The user wants to add Login details in a List way")
+    public void the_user_wants_to_add_login_details_in_a_list_way(List<List<String>> dataTable) {
+        //We need to use Nested list in order to use dataTable in feature file(OrangeHRM.feature)
+
+        orangeHRMHome.setAddLoginDetails();
+        orangeHRMHome.setUserName(dataTable.get(1).get(0));
+        orangeHRMHome.setPassword(dataTable.get(1).get(1));
+        orangeHRMHome.setConfirmPassword(dataTable.get(1).get(1));
+        orangeHRMHome.setStatusDropdown(dataTable.get(1).get(2));
     }
 }

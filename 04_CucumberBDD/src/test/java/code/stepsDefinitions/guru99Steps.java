@@ -10,6 +10,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.util.Map;
+
 public class guru99Steps extends BrowserUtils {
     guru99Home guru99Home=new guru99Home();
     guru99Payment guru99Payment=new guru99Payment();
@@ -68,7 +70,13 @@ public class guru99Steps extends BrowserUtils {
         guru99OrderSuccess.setVerificationText(string);
     }
 
-
+    @Then("The user wants to provide payment information as following")
+    public void the_user_wants_to_provide_payment_information_as_following(Map<String,String> dataTable) {
+        guru99Payment.setCardNumber(dataTable.get("CNumber"));
+        guru99Payment.setMonth(dataTable.get("EMonth"));
+        guru99Payment.setYear(dataTable.get("EYear"));
+        guru99Payment.setCvv_code(dataTable.get("CvvCode"));
+    }
 
 
 }

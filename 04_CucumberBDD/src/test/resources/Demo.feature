@@ -37,3 +37,14 @@ Feature: Payment Gateway functional test
     And The user wants to click on pay now
     Then The user wants to verify message as "Payment successfull!"
 
+ @TC3_BuyingMultipleProducts
+  Scenario: Verify that user can buy multiple products - Using Map Format
+    Given The user wants to go to Payment Gateway Website
+    When The user wants to buy elephant toy as "5"
+    Then The user wants to provide payment information as following
+    |CNumber  | 5454545454545454 |
+    |EMonth   | 11               |
+    |EYear    |  2026            |
+    |CvvCode  | 189              |
+    And The user wants to click on pay now
+    Then The user wants to verify message as "Payment successfull!"
