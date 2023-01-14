@@ -14,8 +14,14 @@ public class OrangeHRMHome extends BrowserUtils {
 
     @FindBy(xpath = "//h1[.='Dashboard']")
     private WebElement dashBoard;
+    @FindBy(id = "menu_pim_viewPimModule")
+    private WebElement PIM;
 
     public void setDashBoard() {
         Assert.assertEquals("Dashboard",dashBoard.getText());
+    }
+
+    public void setDashBoard(String str) {
+        Assert.assertEquals(str,dashBoard.getText());
     }
 }

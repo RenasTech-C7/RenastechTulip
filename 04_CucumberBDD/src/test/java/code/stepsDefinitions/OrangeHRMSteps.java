@@ -30,4 +30,33 @@ public class OrangeHRMSteps extends BrowserUtils {
     public void the_user_wants_to_verify_that_browser_landed_on_dashboard() {
         orangeHRMHome.setDashBoard();
     }
+    @Then("The user wants to verify that browser landed on {string}")
+    public void the_user_wants_to_verify_that_browser_landed_on(String string) {
+        orangeHRMHome.setDashBoard(string);
+    }
+
+    @Then("The user wants to click on PIM Module")
+    public void the_user_wants_to_click_on_pim_module() {
+
+    }
+    @Then("The user wants to go to Add Employee Page")
+    public void the_user_wants_to_go_to_add_employee_page() {
+
+    }
+    @Then("The user wants to add first name as {string}")
+    public void the_user_wants_to_add_first_name_as(String string) {
+
+    }
+    @Then("The user wants to add last name as {string}")
+    public void the_user_wants_to_add_last_name_as(String string) {
+
+    }
+    @Then("The user wants to save personal information")
+    public void the_user_wants_to_save_personal_information() {
+
+    }
+    @Then("The user should be able to see {string}")
+    public void the_user_should_be_able_to_see(String string) {
+
+    }
 }
