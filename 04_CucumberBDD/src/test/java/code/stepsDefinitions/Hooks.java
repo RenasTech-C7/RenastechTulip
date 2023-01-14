@@ -25,7 +25,7 @@ public class Hooks extends BrowserUtils {
             byte[] data=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(data,"image/png", scenario.getName());
         }
-        Driver.closeDriver();
+      //  Driver.closeDriver();
 
     }
 
