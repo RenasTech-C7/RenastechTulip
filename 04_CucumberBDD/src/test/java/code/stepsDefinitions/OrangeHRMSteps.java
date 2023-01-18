@@ -8,6 +8,7 @@ import code.utils.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.log4j.Logger;
 
 import java.util.List;
 import java.util.Map;
@@ -15,6 +16,8 @@ import java.util.Map;
 public class OrangeHRMSteps extends BrowserUtils {
     OrangeHRMLogin orangeHRMLogin=new OrangeHRMLogin();
     OrangeHRMHome orangeHRMHome=new OrangeHRMHome();
+
+    private static final Logger logger= Logger.getLogger(OrangeHRMSteps.class);
     @Given("The user wants to go to OrangeHRM Website")
     public void the_user_wants_to_go_to_orange_hrm_website() {
         Driver.getDriver().get(ConfigurationsReader.getProperties("OrangeHRMTest"));
@@ -24,6 +27,7 @@ public class OrangeHRMSteps extends BrowserUtils {
     public void the_user_wants_to_enter_username_and_password() {
         orangeHRMLogin.setUserName(ConfigurationsReader.getProperties("userName"));
         orangeHRMLogin.setPassWord(ConfigurationsReader.getProperties("password"));
+        logger.info("Username and password provided successfully");
     }
     @Then("The user wants to click on Login button")
     public void the_user_wants_to_click_on_login_button() {
@@ -75,6 +79,7 @@ public class OrangeHRMSteps extends BrowserUtils {
         orangeHRMHome.setPassword(dataTable.get("Password"));
         orangeHRMHome.setConfirmPassword(dataTable.get("Password"));
         orangeHRMHome.setStatusDropdown(dataTable.get("Status"));
+        logger.info("All neccessary information for Login details is provided ");
     }
 
     @Then("The user wants to add employee's first and last name using a List Method")
@@ -89,10 +94,14 @@ public class OrangeHRMSteps extends BrowserUtils {
         //We need to use Nested list in order to use dataTable in feature file(OrangeHRM.feature)
 
         orangeHRMHome.setAddLoginDetails();
+        logger.info("AddLoginDetails button is clicked successfully");
         orangeHRMHome.setUserName(dataTable.get(1).get(0));
+        logger.info("Username is provided successfully");
         orangeHRMHome.setPassword(dataTable.get(1).get(1));
+        logger.info("Password is provided successfully");
         orangeHRMHome.setConfirmPassword(dataTable.get(1).get(1));
         orangeHRMHome.setStatusDropdown(dataTable.get(1).get(2));
+        logger.info("Status provided successfully");
     }
 
 

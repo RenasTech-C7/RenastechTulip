@@ -2,16 +2,20 @@ package code.pages;
 
 import code.utils.BrowserUtils;
 import code.utils.Driver;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+
 
 public class OrangeHRMHome extends BrowserUtils {
     public OrangeHRMHome(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    private static final org.apache.log4j.Logger logger= Logger.getLogger(OrangeHRMHome.class);
     @FindBy(xpath = "//h1[.='Dashboard']")
     private WebElement dashBoard;
     @FindBy(id = "menu_pim_viewPimModule")
@@ -55,23 +59,28 @@ public class OrangeHRMHome extends BrowserUtils {
 
     public void setFirstName(String firstname) {
       firstName.sendKeys(firstname);
+      logger.info(firstname+" is successfully entered");
     }
 
     public void setLastName(String lastname) {
         lastName.sendKeys(lastname);
+        logger.info(lastname+" is successfully entered");
     }
 
     public void setSaveButton() {
         clickWithWait(saveButton);
+        logger.info("Save button successfully clicked");
     }
 
     public void setPersonalDetailsHeader(String expectedHeader) {
         staticWait(2);
         Assert.assertEquals(expectedHeader,personalDetailsHeader.getText());
+       logger.info(expectedHeader+" is expected header and successfully provided");
     }
 
     public void setAddLoginDetails() {
        clickWithWait(addLoginDetails);
+        logger.info("Add login details button was successfully clicked");
     }
 
     public void setUserName(String username) {
