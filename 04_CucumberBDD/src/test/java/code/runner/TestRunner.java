@@ -16,8 +16,10 @@ import org.junit.runner.RunWith;
         dryRun = false,  //This is to get Undefined steps without running scenarios
         plugin = {
          "pretty", //This will help us to have a more understandable console output
-         "html:target/default-cucumber-reports.html",
-         "json:target/cucumber.json",
+         "rerun:target/rerun.txt", //This will help us to store failed scenarios from different feature files at each run so
+         //that we can run only failed scenarios. We will be reading failed scenarios from rerun.txt file located under target folder
+         "html:target/default-cucumber-reports.html", // We use this to generate HTML reports after each run
+         "json:target/cucumber.json", //We use this to generate JSON reports after each run
 
         }
 )
