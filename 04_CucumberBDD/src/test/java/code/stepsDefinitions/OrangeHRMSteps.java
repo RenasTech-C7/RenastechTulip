@@ -81,7 +81,7 @@ public class OrangeHRMSteps extends BrowserUtils {
     public void the_user_wants_to_add_employee_s_first_and_last_name_using_a_list_method(List<List<String>> dataTable) {
      //We need to use Nested list in order to use dataTable in feature file(OrangeHRM.feature)
                                             //Row  Column
-        orangeHRMHome.setFirstName(dataTable.get(2).get(0));
+        orangeHRMHome.setFirstName(dataTable.get(2).get(0));  //Row 3 Column 1
         orangeHRMHome.setLastName(dataTable.get(2).get(1));
     }
     @Then("The user wants to add Login details in a List way")
@@ -94,4 +94,7 @@ public class OrangeHRMSteps extends BrowserUtils {
         orangeHRMHome.setConfirmPassword(dataTable.get(1).get(1));
         orangeHRMHome.setStatusDropdown(dataTable.get(1).get(2));
     }
+
+
+
 }

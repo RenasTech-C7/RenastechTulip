@@ -10,6 +10,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.util.List;
 import java.util.Map;
 
 public class guru99Steps extends BrowserUtils {
@@ -77,6 +78,17 @@ public class guru99Steps extends BrowserUtils {
         guru99Payment.setYear(dataTable.get("EYear"));
         guru99Payment.setCvv_code(dataTable.get("CvvCode"));
     }
-
+    @When("The user wants to buy elephant toy as following quantity")
+    public void the_user_wants_to_buy_elephant_toy_as_following_quantity(List<List<String>> dataTable) {
+        guru99Home.getQuantityDropdown(dataTable.get(0).get(0));
+        guru99Home.getBuyNowButton();
+    }
+    @Then("The user wants to provide payment information as following as a List")
+    public void the_user_wants_to_provide_payment_information_as_following_as_a_list(List<List<String>> dataTable) {
+        guru99Payment.setCardNumber(dataTable.get(0).get(0));
+        guru99Payment.setMonth(dataTable.get(0).get(1));
+        guru99Payment.setYear(dataTable.get(0).get(2));
+        guru99Payment.setCvv_code(dataTable.get(0).get(3));
+    }
 
 }

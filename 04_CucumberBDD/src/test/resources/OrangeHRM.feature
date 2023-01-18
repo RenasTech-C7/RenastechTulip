@@ -1,6 +1,6 @@
 Feature: Functional testing on OrangeHRM
 
-  @LoginFunctionality
+  @LoginFunctionality @Smoke
   Scenario: Login to OrangeHRM
     Given The user wants to go to OrangeHRM Website
     When The user wants to enter username and password
@@ -8,14 +8,14 @@ Feature: Functional testing on OrangeHRM
     And The user wants to verify that browser landed on Dashboard
 
 
-    @ParameterizedDashboard @TC100
+    @ParameterizedDashboard @TC100 @Regression
   Scenario: Login to OrangeHRM with Parameterized message
     Given The user wants to go to OrangeHRM Website
     When The user wants to enter username and password
     Then The user wants to click on Login button
     And The user wants to verify that browser landed on "Dashboard"
 
-    @TC_200
+    @TC_200 @Regression
   Scenario: Adding a new employee
     Given The user wants to go to OrangeHRM Website
     When The user wants to enter username and password
@@ -29,7 +29,7 @@ Feature: Functional testing on OrangeHRM
     Then The user should be able to see "Personal Details"
 
       #In this scenario we are using Map to provide multiple pieces of information
-  @TC300
+  @TC300 @Smoke
   Scenario: Adding a new employee - different format - using map
     Given The user wants to go to OrangeHRM Website
     When The user wants to enter username and password
@@ -49,7 +49,7 @@ Feature: Functional testing on OrangeHRM
     Then The user wants to save personal information
     Then The user should be able to see "Personal Details"
 
-   @TC400
+   @TC400 @Regression
   Scenario: Adding a new employee - Third format using List
       Given The user wants to go to OrangeHRM Website
       When The user wants to enter username and password
