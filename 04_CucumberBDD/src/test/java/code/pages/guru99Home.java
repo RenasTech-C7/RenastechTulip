@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
+
 public class guru99Home extends BrowserUtils {
 
     public guru99Home(){
@@ -27,6 +29,6 @@ public class guru99Home extends BrowserUtils {
     }
 
     public void getBuyNowButton() {
-       buyNowButton.click();
+        buyNowButton.click();
     }
 }

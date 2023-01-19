@@ -73,3 +73,17 @@
 2023-01-17 21:55:22 FATAL OrangeHRMLogin:27 - Not able to Log in due to empty username
 2023-01-17 21:55:22 INFO  OrangeHRMLogin:28 - Please provide a valid username
 2023-01-17 21:55:23 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-18 17:59:02 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-18 17:59:05 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-18 17:59:10 INFO  OrangeHRMHome:62 - Mehmet is successfully entered
+2023-01-18 17:59:10 INFO  OrangeHRMHome:67 - Renastech2 is successfully entered
+2023-01-18 17:59:12 INFO  OrangeHRMHome:72 - Save button successfully clicked
+2023-01-18 17:59:21 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-18 17:59:25 INFO  OrangeHRMHome:62 - Anil is successfully entered
+2023-01-18 17:59:25 INFO  OrangeHRMHome:67 - Renastech44 is successfully entered
+2023-01-18 17:59:26 INFO  OrangeHRMHome:83 - Add login details button was successfully clicked
+2023-01-18 17:59:26 INFO  OrangeHRMSteps:97 - AddLoginDetails button is clicked successfully
+2023-01-18 17:59:26 INFO  OrangeHRMSteps:99 - Username is provided successfully
+2023-01-18 17:59:26 INFO  OrangeHRMSteps:101 - Password is provided successfully
+2023-01-18 17:59:27 INFO  OrangeHRMSteps:104 - Status provided successfully
+2023-01-18 17:59:28 INFO  OrangeHRMHome:72 - Save button successfully clicked
