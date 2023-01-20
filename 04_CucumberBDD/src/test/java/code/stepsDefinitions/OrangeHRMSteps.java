@@ -1,5 +1,6 @@
 package code.stepsDefinitions;
 
+import code.pages.OrangeHRMAdmin;
 import code.pages.OrangeHRMHome;
 import code.pages.OrangeHRMLogin;
 import code.utils.BrowserUtils;
@@ -16,6 +17,7 @@ import java.util.Map;
 public class OrangeHRMSteps extends BrowserUtils {
     OrangeHRMLogin orangeHRMLogin=new OrangeHRMLogin();
     OrangeHRMHome orangeHRMHome=new OrangeHRMHome();
+    OrangeHRMAdmin orangeHRMAdmin=new OrangeHRMAdmin();
 
     private static final Logger logger= Logger.getLogger(OrangeHRMSteps.class);
     @Given("The user wants to go to OrangeHRM Website")
@@ -119,6 +121,32 @@ public class OrangeHRMSteps extends BrowserUtils {
 
 
     }
+
+    @Then("the user wants to add employee's first name as {string} and last name as {string}")
+    public void the_user_wants_to_add_employee_s_first_name_as_and_last_name_as(String firstname, String lastname) {
+        orangeHRMHome.setFirstName(firstname);
+        orangeHRMHome.setLastName(lastname);
+        logger.info(firstname+" is provided as firstname and "+lastname+" is provided as lastname");
+    }
+    @Then("The user wants to go to Admin Module")
+    public void the_user_wants_to_go_to_admin_module() {
+        orangeHRMAdmin.setAdminButton();
+    }
+    @Then("The user wants to go to Nationalities Page")
+    public void the_user_wants_to_go_to_nationalities_page() {
+        orangeHRMAdmin.setNationalitiesButton();
+    }
+    @Then("The user wants to click on add new nationality")
+    public void the_user_wants_to_click_on_add_new_nationality() {
+        orangeHRMAdmin.setAddButton();
+    }
+    @Then("The user wants to add new nationalities as {string}")
+    public void the_user_wants_to_add_new_nationalities_as(String nationality) {
+        orangeHRMAdmin.setNameofNationalityBox(nationality);
+        orangeHRMAdmin.setSaveButton();
+        orangeHRMAdmin.setNationalitiesList(nationality);
+    }
+
 
 
 }

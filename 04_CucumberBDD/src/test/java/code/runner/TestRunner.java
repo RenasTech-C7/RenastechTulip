@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         //We need to copy path Resources folder as following : path from content root
         glue = "code/stepsDefinitions", //This is to connect stepsDefinitions with runner class
         //We need to copy path of stepsDefinitions Folder as following : path from source root
-        tags = "@Scenario_Outline_TC1", //This is the field that we will use to run tags
+        tags = "@Scenario_Outline_TC3", //This is the field that we will use to run tags
         dryRun = false,  //This is to get Undefined steps without running scenarios
         plugin = {
          "pretty", //This will help us to have a more understandable console output

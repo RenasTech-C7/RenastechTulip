@@ -135,3 +135,121 @@
 2023-01-19 19:42:45 INFO  OrangeHRMSteps:116 - RenasRenas12! is provided as Confirm Password
 2023-01-19 19:42:46 INFO  OrangeHRMSteps:118 - Status is provided successfully
 2023-01-19 19:42:47 INFO  OrangeHRMHome:72 - Save button successfully clicked
+2023-01-19 20:17:38 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-19 20:17:43 INFO  OrangeHRMHome:62 - Benjamin is successfully entered
+2023-01-19 20:17:43 INFO  OrangeHRMHome:67 - Renastech22 is successfully entered
+2023-01-19 20:17:43 INFO  OrangeHRMSteps:127 - Benjamin is provided as firstname and Renastech22 is provided as lastname
+2023-01-19 20:17:44 INFO  OrangeHRMHome:84 - Add login details button was successfully clicked
+2023-01-19 20:17:44 INFO  OrangeHRMSteps:110 - AddLogin Details button is clicked successfully
+2023-01-19 20:17:44 INFO  OrangeHRMSteps:112 - renastech234 is provided as username
+2023-01-19 20:17:44 INFO  OrangeHRMSteps:114 - Renastech!@@@2 is provided as Password
+2023-01-19 20:17:44 INFO  OrangeHRMSteps:116 - Renastech!@@@2 is provided as Confirm Password
+2023-01-19 20:17:45 INFO  OrangeHRMSteps:118 - Status is provided successfully
+2023-01-19 20:17:46 INFO  OrangeHRMHome:72 - Save button successfully clicked
+2023-01-19 20:17:55 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-19 20:18:00 INFO  OrangeHRMHome:62 - Abdul is successfully entered
+2023-01-19 20:18:00 INFO  OrangeHRMHome:67 - Renastech33 is successfully entered
+2023-01-19 20:18:00 INFO  OrangeHRMSteps:127 - Abdul is provided as firstname and Renastech33 is provided as lastname
+2023-01-19 20:18:00 INFO  OrangeHRMSteps:110 - AddLogin Details button is clicked successfully
+2023-01-19 20:18:00 INFO  OrangeHRMSteps:112 - abcRenastechh is provided as username
+2023-01-19 20:18:00 INFO  OrangeHRMSteps:114 - RenasRenas!@! is provided as Password
+2023-01-19 20:18:01 INFO  OrangeHRMSteps:116 - RenasRenas!@! is provided as Confirm Password
+2023-01-19 20:18:02 INFO  OrangeHRMSteps:118 - Status is provided successfully
+2023-01-19 20:18:03 INFO  OrangeHRMHome:72 - Save button successfully clicked
+2023-01-19 20:18:12 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-19 20:18:18 INFO  OrangeHRMHome:62 - Anil is successfully entered
+2023-01-19 20:18:18 INFO  OrangeHRMHome:67 - Renastech44 is successfully entered
+2023-01-19 20:18:18 INFO  OrangeHRMSteps:127 - Anil is provided as firstname and Renastech44 is provided as lastname
+2023-01-19 20:18:18 INFO  OrangeHRMSteps:110 - AddLogin Details button is clicked successfully
+2023-01-19 20:18:18 INFO  OrangeHRMSteps:112 - abc123Renas is provided as username
+2023-01-19 20:18:19 INFO  OrangeHRMSteps:114 - Renastech123@! is provided as Password
+2023-01-19 20:18:19 INFO  OrangeHRMSteps:116 - Renastech123@! is provided as Confirm Password
+2023-01-19 20:18:20 INFO  OrangeHRMSteps:118 - Status is provided successfully
+2023-01-19 20:18:21 INFO  OrangeHRMHome:72 - Save button successfully clicked
+2023-01-19 20:18:30 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-19 20:18:37 INFO  OrangeHRMHome:62 - Ferah is successfully entered
+2023-01-19 20:18:37 INFO  OrangeHRMHome:67 - RenasRenas32 is successfully entered
+2023-01-19 20:18:37 INFO  OrangeHRMSteps:127 - Ferah is provided as firstname and RenasRenas32 is provided as lastname
+2023-01-19 20:18:37 INFO  OrangeHRMSteps:110 - AddLogin Details button is clicked successfully
+2023-01-19 20:18:38 INFO  OrangeHRMSteps:112 - Santos123 is provided as username
+2023-01-19 20:18:38 INFO  OrangeHRMSteps:114 - RenasRenas12! is provided as Password
+2023-01-19 20:18:38 INFO  OrangeHRMSteps:116 - RenasRenas12! is provided as Confirm Password
+2023-01-19 20:18:39 INFO  OrangeHRMSteps:118 - Status is provided successfully
+2023-01-19 20:18:40 INFO  OrangeHRMHome:72 - Save button successfully clicked
+2023-01-19 21:02:08 INFO  OrangeHRMSteps:32 - Username and password provided successfully
+2023-01-19 21:02:17 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:17 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:17 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:17 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:18 INFO  OrangeHRMSteps:32 - Username and password provided successfully
+2023-01-19 21:02:26 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:26 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:26 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:26 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:26 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:26 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:28 INFO  OrangeHRMSteps:32 - Username and password provided successfully
+2023-01-19 21:02:36 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:36 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:36 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:36 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:36 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:36 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:36 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:36 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:38 INFO  OrangeHRMSteps:32 - Username and password provided successfully
+2023-01-19 21:02:45 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:46 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:46 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:46 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:46 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:46 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:46 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:46 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:46 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:47 INFO  OrangeHRMSteps:32 - Username and password provided successfully
+2023-01-19 21:02:56 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:56 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:56 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:56 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:56 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:56 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:56 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:56 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:56 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:56 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:02:57 INFO  OrangeHRMSteps:32 - Username and password provided successfully
+2023-01-19 21:03:05 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:05 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:05 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:05 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:05 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:05 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:05 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:05 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:05 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:05 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:05 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:07 INFO  OrangeHRMSteps:32 - Username and password provided successfully
+2023-01-19 21:03:15 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:15 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:15 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:15 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:15 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:15 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:15 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:15 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:15 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:15 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:17 INFO  OrangeHRMSteps:32 - Username and password provided successfully
+2023-01-19 21:03:24 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:24 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:24 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:24 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:24 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:24 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:24 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:24 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:24 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:24 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
+2023-01-19 21:03:24 ERROR OrangeHRMAdmin:58 - Nationality provided is not found
