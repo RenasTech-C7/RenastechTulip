@@ -104,6 +104,21 @@ public class OrangeHRMSteps extends BrowserUtils {
         logger.info("Status provided successfully");
     }
 
+    @Then("The user wants to add login information {string} {string} {string}")
+    public void the_user_wants_to_add_login_information(String username, String password, String status) {
+        orangeHRMHome.setAddLoginDetails();
+        logger.info("AddLogin Details button is clicked successfully");
+        orangeHRMHome.setUserName(username);
+        logger.info(username+" is provided as username");
+        orangeHRMHome.setPassword(password);
+        logger.info(password+" is provided as Password");
+        orangeHRMHome.setConfirmPassword(password);
+        logger.info(password+" is provided as Confirm Password");
+        orangeHRMHome.setStatusDropdown(status);
+        logger.info("Status is provided successfully");
+
+
+    }
 
 
 }

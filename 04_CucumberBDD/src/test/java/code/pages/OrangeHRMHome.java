@@ -79,8 +79,11 @@ public class OrangeHRMHome extends BrowserUtils {
     }
 
     public void setAddLoginDetails() {
-       clickWithWait(addLoginDetails);
-        logger.info("Add login details button was successfully clicked");
+        if (!addLoginDetails.isSelected()){
+            clickWithWait(addLoginDetails);
+            logger.info("Add login details button was successfully clicked");
+        }
+
     }
 
     public void setUserName(String username) {

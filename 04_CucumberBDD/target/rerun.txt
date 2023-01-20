@@ -1,2 +1,1 @@
-file:src/test/resources/OrangeHRM.feature:12:19:53
-file:src/test/resources/Demo.feature:6:19:30:41:54
+file:src/test/resources/OrangeHRM.feature:95:96:97:98

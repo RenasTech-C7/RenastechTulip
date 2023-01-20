@@ -73,3 +73,65 @@
 2023-01-17 21:55:22 FATAL OrangeHRMLogin:27 - Not able to Log in due to empty username
 2023-01-17 21:55:22 INFO  OrangeHRMLogin:28 - Please provide a valid username
 2023-01-17 21:55:23 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-19 19:39:29 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-19 19:39:40 INFO  OrangeHRMHome:62 - Anil is successfully entered
+2023-01-19 19:39:40 INFO  OrangeHRMHome:67 - Renastech44 is successfully entered
+2023-01-19 19:39:41 INFO  OrangeHRMHome:83 - Add login details button was successfully clicked
+2023-01-19 19:39:41 INFO  OrangeHRMSteps:110 - AddLogin Details button is clicked successfully
+2023-01-19 19:39:42 INFO  OrangeHRMSteps:112 - renastech234 is provided as username
+2023-01-19 19:39:42 INFO  OrangeHRMSteps:114 - Renastech!@@@2 is provided as Password
+2023-01-19 19:39:42 INFO  OrangeHRMSteps:116 - Renastech!@@@2 is provided as Confirm Password
+2023-01-19 19:39:43 INFO  OrangeHRMSteps:118 - Status is provided successfully
+2023-01-19 19:39:47 INFO  OrangeHRMHome:72 - Save button successfully clicked
+2023-01-19 19:39:56 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-19 19:40:01 INFO  OrangeHRMHome:62 - Anil is successfully entered
+2023-01-19 19:40:01 INFO  OrangeHRMHome:67 - Renastech44 is successfully entered
+2023-01-19 19:40:02 INFO  OrangeHRMHome:83 - Add login details button was successfully clicked
+2023-01-19 19:40:02 INFO  OrangeHRMSteps:110 - AddLogin Details button is clicked successfully
+2023-01-19 19:40:09 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-19 19:40:15 INFO  OrangeHRMHome:62 - Anil is successfully entered
+2023-01-19 19:40:15 INFO  OrangeHRMHome:67 - Renastech44 is successfully entered
+2023-01-19 19:40:16 INFO  OrangeHRMHome:83 - Add login details button was successfully clicked
+2023-01-19 19:40:16 INFO  OrangeHRMSteps:110 - AddLogin Details button is clicked successfully
+2023-01-19 19:40:23 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-19 19:40:27 INFO  OrangeHRMHome:62 - Anil is successfully entered
+2023-01-19 19:40:27 INFO  OrangeHRMHome:67 - Renastech44 is successfully entered
+2023-01-19 19:40:28 INFO  OrangeHRMHome:83 - Add login details button was successfully clicked
+2023-01-19 19:40:28 INFO  OrangeHRMSteps:110 - AddLogin Details button is clicked successfully
+2023-01-19 19:41:51 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-19 19:41:56 INFO  OrangeHRMHome:62 - Anil is successfully entered
+2023-01-19 19:41:56 INFO  OrangeHRMHome:67 - Renastech44 is successfully entered
+2023-01-19 19:41:57 INFO  OrangeHRMHome:84 - Add login details button was successfully clicked
+2023-01-19 19:41:57 INFO  OrangeHRMSteps:110 - AddLogin Details button is clicked successfully
+2023-01-19 19:41:57 INFO  OrangeHRMSteps:112 - renastech234 is provided as username
+2023-01-19 19:41:57 INFO  OrangeHRMSteps:114 - Renastech!@@@2 is provided as Password
+2023-01-19 19:41:57 INFO  OrangeHRMSteps:116 - Renastech!@@@2 is provided as Confirm Password
+2023-01-19 19:41:59 INFO  OrangeHRMSteps:118 - Status is provided successfully
+2023-01-19 19:42:00 INFO  OrangeHRMHome:72 - Save button successfully clicked
+2023-01-19 19:42:08 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-19 19:42:13 INFO  OrangeHRMHome:62 - Anil is successfully entered
+2023-01-19 19:42:13 INFO  OrangeHRMHome:67 - Renastech44 is successfully entered
+2023-01-19 19:42:13 INFO  OrangeHRMSteps:110 - AddLogin Details button is clicked successfully
+2023-01-19 19:42:13 INFO  OrangeHRMSteps:112 - abcRenastechh is provided as username
+2023-01-19 19:42:13 INFO  OrangeHRMSteps:114 - RenasRenas!@! is provided as Password
+2023-01-19 19:42:13 INFO  OrangeHRMSteps:116 - RenasRenas!@! is provided as Confirm Password
+2023-01-19 19:42:15 INFO  OrangeHRMSteps:118 - Status is provided successfully
+2023-01-19 19:42:16 INFO  OrangeHRMHome:72 - Save button successfully clicked
+2023-01-19 19:42:24 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-19 19:42:28 INFO  OrangeHRMHome:62 - Anil is successfully entered
+2023-01-19 19:42:28 INFO  OrangeHRMHome:67 - Renastech44 is successfully entered
+2023-01-19 19:42:28 INFO  OrangeHRMSteps:110 - AddLogin Details button is clicked successfully
+2023-01-19 19:42:28 INFO  OrangeHRMSteps:112 - abc123Renas is provided as username
+2023-01-19 19:42:29 INFO  OrangeHRMSteps:114 - Renastech123@! is provided as Password
+2023-01-19 19:42:29 INFO  OrangeHRMSteps:116 - Renastech123@! is provided as Confirm Password
+2023-01-19 19:42:30 INFO  OrangeHRMSteps:118 - Status is provided successfully
+2023-01-19 19:42:31 INFO  OrangeHRMHome:72 - Save button successfully clicked
+2023-01-19 19:42:40 INFO  OrangeHRMSteps:30 - Username and password provided successfully
+2023-01-19 19:42:45 INFO  OrangeHRMHome:62 - Anil is successfully entered
+2023-01-19 19:42:45 INFO  OrangeHRMHome:67 - Renastech44 is successfully entered
+2023-01-19 19:42:45 INFO  OrangeHRMSteps:110 - AddLogin Details button is clicked successfully
+2023-01-19 19:42:45 INFO  OrangeHRMSteps:112 - Santos123 is provided as username
+2023-01-19 19:42:45 INFO  OrangeHRMSteps:114 - RenasRenas12! is provided as Password
+2023-01-19 19:42:45 INFO  OrangeHRMSteps:116 - RenasRenas12! is provided as Confirm Password
+2023-01-19 19:42:46 INFO  OrangeHRMSteps:118 - Status is provided successfully
+2023-01-19 19:42:47 INFO  OrangeHRMHome:72 - Save button successfully clicked
