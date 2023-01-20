@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: Testing dashboard with data table
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.77 s <<< FAILURE! - in Testing dashboard with data table
+Testing dashboard with data table.Verify dashboard on header with data table  Time elapsed: 4.77 s  <<< ERROR!
+io.cucumber.datatable.UndefinedDataTableTypeException: 
+Can't convert DataTable to List<java.lang.String>.
+Please review these problems:
+
+ - There was a table cell transformer for java.lang.String but the table was too wide to use it.
+   Please reduce the table width to use this converter.
+
+ - There was no table entry or table row transformer registered for java.lang.String.
+   Please consider registering a table entry or row transformer.
+
+Note: Usually solving one is enough
+
