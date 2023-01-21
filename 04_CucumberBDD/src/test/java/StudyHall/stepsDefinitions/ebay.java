@@ -1,10 +1,9 @@
-package code.stepsDefinitions;
+package StudyHall.stepsDefinitions;
 
-import code.pages.ebayPage;
+import StudyHall.pages.ebayPage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 

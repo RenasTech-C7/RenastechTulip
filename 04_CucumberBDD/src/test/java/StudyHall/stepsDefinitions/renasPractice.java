@@ -1,6 +1,6 @@
-package code.stepsDefinitions;
+package StudyHall.stepsDefinitions;
 
-import code.pages.renasPracticePage;
+import StudyHall.pages.renasPracticePage;
 import code.utils.BrowserUtils;
 import code.utils.Driver;
 import io.cucumber.java.en.Given;

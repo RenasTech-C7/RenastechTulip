@@ -1,4 +1,4 @@
-package code.pages;
+package StudyHall.pages;
 
 import code.utils.BrowserUtils;
 import code.utils.Driver;
