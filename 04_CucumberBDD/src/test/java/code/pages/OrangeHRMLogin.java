@@ -38,4 +38,11 @@ public class OrangeHRMLogin extends BrowserUtils {
     public void setLoginButton() {
         loginButton.click();
     }
+
+    public void setDataFromExcel(String username, String password){
+        userName.sendKeys(username);
+        passWord.sendKeys(password);
+        clickWithWait(loginButton);
+
+    }
 }

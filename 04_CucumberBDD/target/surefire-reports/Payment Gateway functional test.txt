@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Payment Gateway functional test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 67.857 s - in Payment Gateway functional test

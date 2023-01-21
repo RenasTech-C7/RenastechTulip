@@ -81,7 +81,7 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <parallel>methods</parallel>
-                    <threadCount>5</threadCount >
+                    <threadCount>2</threadCount >
                     <forkCount>2C</forkCount>
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <includes>

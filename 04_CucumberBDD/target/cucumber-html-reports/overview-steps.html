@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>20 Jan 2023, 21:00</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">code.stepsDefinitions.Hooks.setup()</td>
+              <td>10</td>
+              <td class="duration" data-value="1659900000">1.659</td>
+              <td class="duration" data-value="1659900000">3.543</td>
+              <td class="duration" data-value="16599000000">16.599</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>10</td>
+              <td class="duration" data-value="759800000">0.759</td>
+              <td class="duration" data-value="759800000">0.937</td>
+              <td class="duration" data-value="7598000000">7.598</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.OrangeHRMSteps.the_user_should_be_able_to_see(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="7069250000">7.069</td>
+              <td class="duration" data-value="7069250000">7.090</td>
+              <td class="duration" data-value="28277000000">28.277</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.OrangeHRMSteps.the_user_wants_to_add_employee_s_first_and_last_name_using_a_list_method(java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;)</td>
+              <td>2</td>
+              <td class="duration" data-value="190000000">0.190</td>
+              <td class="duration" data-value="190000000">0.214</td>
+              <td class="duration" data-value="380000000">0.380</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.OrangeHRMSteps.the_user_wants_to_add_first_name_as(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="79500000">0.079</td>
+              <td class="duration" data-value="79500000">0.085</td>
+              <td class="duration" data-value="159000000">0.159</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.OrangeHRMSteps.the_user_wants_to_add_last_name_as(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="87000000">0.087</td>
+              <td class="duration" data-value="87000000">0.092</td>
+              <td class="duration" data-value="174000000">0.174</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.OrangeHRMSteps.the_user_wants_to_add_login_details_in_a_list_way(java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;)</td>
+              <td>2</td>
+              <td class="duration" data-value="2565000000">2.565</td>
+              <td class="duration" data-value="2565000000">2.675</td>
+              <td class="duration" data-value="5130000000">5.130</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.OrangeHRMSteps.the_user_wants_to_click_on_login_button()</td>
+              <td>5</td>
+              <td class="duration" data-value="1667200000">1.667</td>
+              <td class="duration" data-value="1667200000">2.111</td>
+              <td class="duration" data-value="8336000000">8.336</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.OrangeHRMSteps.the_user_wants_to_click_on_pim_module()</td>
+              <td>4</td>
+              <td class="duration" data-value="2013250000">2.013</td>
+              <td class="duration" data-value="2013250000">2.117</td>
+              <td class="duration" data-value="8053000000">8.053</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.OrangeHRMSteps.the_user_wants_to_enter_username_and_password()</td>
+              <td>5</td>
+              <td class="duration" data-value="1190000000">1.190</td>
+              <td class="duration" data-value="1190000000">1.222</td>
+              <td class="duration" data-value="5950000000">5.950</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.OrangeHRMSteps.the_user_wants_to_go_to_add_employee_page()</td>
+              <td>4</td>
+              <td class="duration" data-value="1486750000">1.486</td>
+              <td class="duration" data-value="1486750000">1.639</td>
+              <td class="duration" data-value="5947000000">5.947</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.OrangeHRMSteps.the_user_wants_to_go_to_orange_hrm_website()</td>
+              <td>5</td>
+              <td class="duration" data-value="1030000000">1.030</td>
+              <td class="duration" data-value="1030000000">2.509</td>
+              <td class="duration" data-value="5150000000">5.150</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.OrangeHRMSteps.the_user_wants_to_save_personal_information()</td>
+              <td>4</td>
+              <td class="duration" data-value="1318250000">1.318</td>
+              <td class="duration" data-value="1318250000">1.620</td>
+              <td class="duration" data-value="5273000000">5.273</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.OrangeHRMSteps.the_user_wants_to_verify_that_browser_landed_on(java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="44400000">0.044</td>
+              <td class="duration" data-value="44400000">0.063</td>
+              <td class="duration" data-value="222000000">0.222</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_buy_an_elephant_toy()</td>
+              <td>1</td>
+              <td class="duration" data-value="1033000000">1.033</td>
+              <td class="duration" data-value="1033000000">1.033</td>
+              <td class="duration" data-value="1033000000">1.033</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_buy_elephant_toy_as(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="1018666666">1.018</td>
+              <td class="duration" data-value="1018666666">1.028</td>
+              <td class="duration" data-value="3056000000">3.056</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_buy_elephant_toy_as_following_quantity(java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;)</td>
+              <td>1</td>
+              <td class="duration" data-value="981000000">0.981</td>
+              <td class="duration" data-value="981000000">0.981</td>
+              <td class="duration" data-value="981000000">0.981</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_click_on_pay_now()</td>
+              <td>5</td>
+              <td class="duration" data-value="1007600000">1.007</td>
+              <td class="duration" data-value="1007600000">1.288</td>
+              <td class="duration" data-value="5038000000">5.038</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_enter_credit_card_number_as(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1103000000">1.103</td>
+              <td class="duration" data-value="1103000000">1.103</td>
+              <td class="duration" data-value="2206000000">2.206</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_enter_cvv_code_as(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1101000000">1.101</td>
+              <td class="duration" data-value="1101000000">1.118</td>
+              <td class="duration" data-value="2202000000">2.202</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_enter_expiration_month_as(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="2200500000">2.200</td>
+              <td class="duration" data-value="2200500000">2.212</td>
+              <td class="duration" data-value="4401000000">4.401</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_enter_expiration_year_as(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="2168000000">2.168</td>
+              <td class="duration" data-value="2168000000">2.169</td>
+              <td class="duration" data-value="4336000000">4.336</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_go_to_payment_gateway_website()</td>
+              <td>5</td>
+              <td class="duration" data-value="2519600000">2.519</td>
+              <td class="duration" data-value="2519600000">2.608</td>
+              <td class="duration" data-value="12598000000">12.598</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_provide_payment_information_as_following(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</td>
+              <td>1</td>
+              <td class="duration" data-value="6751000000">6.751</td>
+              <td class="duration" data-value="6751000000">6.751</td>
+              <td class="duration" data-value="6751000000">6.751</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_provide_payment_information_as_following_as_a_list(java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;)</td>
+              <td>1</td>
+              <td class="duration" data-value="6633000000">6.633</td>
+              <td class="duration" data-value="6633000000">6.633</td>
+              <td class="duration" data-value="6633000000">6.633</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_provide_requested_payment_information()</td>
+              <td>1</td>
+              <td class="duration" data-value="6763000000">6.763</td>
+              <td class="duration" data-value="6763000000">6.763</td>
+              <td class="duration" data-value="6763000000">6.763</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_verify_message_as(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="50250000">0.050</td>
+              <td class="duration" data-value="50250000">0.069</td>
+              <td class="duration" data-value="201000000">0.201</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">code.stepsDefinitions.guru99Steps.the_user_wants_to_verify_order_is_successful()</td>
+              <td>1</td>
+              <td class="duration" data-value="34000000">0.034</td>
+              <td class="duration" data-value="34000000">0.034</td>
+              <td class="duration" data-value="34000000">0.034</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>28</td>
+            <td>95</td>
+            <td class="duration">1.615</td>
+            <td class="duration">28.277</td>
+            <td class="duration">2:33.481</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

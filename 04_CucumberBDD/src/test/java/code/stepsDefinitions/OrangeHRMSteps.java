@@ -160,6 +160,25 @@ public class OrangeHRMSteps extends BrowserUtils {
         XSSFWorkbook workbook=new XSSFWorkbook(fileInputStream); // We are opening the excel file here
         XSSFSheet sheet= workbook.getSheet("Sheet1"); //We are opening Sheet1 here
 
+        System.out.println(sheet.getRow(0).getCell(0).toString());
+        System.out.println(sheet.getRow(0).getCell(1).toString());
+        System.out.println(sheet.getRow(1).getCell(0).toString());
+        System.out.println(sheet.getRow(1).getCell(1).toString());
+
+        int rows=sheet.getLastRowNum();
+        int columns=sheet.getRow(0).getLastCellNum();
+
+        System.out.println("Total rows:"+ rows+", Total Columns:"+columns);
+        String username=sheet.getRow(1).getCell(0).toString();
+        String password=sheet.getRow(1).getCell(1).toString();
+
+      orangeHRMLogin.setDataFromExcel(username,password);
+
+        for(int i=0; i<rows; i++ ){
+            for (int j=0; j<columns; j++){
+                System.out.println(sheet.getRow(i).getCell(j).toString());
+            }
+        }
 
 
     }
