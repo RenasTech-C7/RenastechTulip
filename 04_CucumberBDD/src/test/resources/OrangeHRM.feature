@@ -70,7 +70,7 @@ Feature: Functional testing on OrangeHRM
      Then The user wants to save personal information
      Then The user should be able to see "Personal Details"
 
-     #Scenario outline is the place where we implement DDT(DataDrivenTesting)
+     #Scenario outline is the place where we implement DDT(DataDrivenTesting) DDT+BDD=Hybrid
      # We have 4 examples therefore this scenario will be running 4 times
 
   @Scenario_Outline_TC1

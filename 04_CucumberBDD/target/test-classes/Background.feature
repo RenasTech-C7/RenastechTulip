@@ -1,5 +1,3 @@
-
-
 Feature: We are testing background keyword in this feature file
 
   #@Before annotation in JUnit or TestNg is used to specify

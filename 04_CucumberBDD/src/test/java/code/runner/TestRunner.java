@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
         //We need to copy path Resources folder as following : path from content root
         glue = "code/stepsDefinitions", //This is to connect stepsDefinitions with runner class
         //We need to copy path of stepsDefinitions Folder as following : path from source root
-        tags = "@BackGroundKeywordTest", //This is the field that we will use to run tags
-        dryRun = false,  //This is to get Undefined steps without running scenarios
+        tags = "@ExcelFile", //This is the field that we will use to run tags
+        dryRun = true,  //This is to get Undefined steps without running scenarios
         plugin = {
          "pretty", //This will help us to have a more understandable console output
          "rerun:target/rerun.txt", //This will help us to store failed scenarios from different feature files at each run so

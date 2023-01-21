@@ -10,7 +10,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -145,6 +150,18 @@ public class OrangeHRMSteps extends BrowserUtils {
         orangeHRMAdmin.setNameofNationalityBox(nationality);
         orangeHRMAdmin.setSaveButton();
         orangeHRMAdmin.setNationalitiesList(nationality);
+    }
+    @Given("The user wants to login to OrangeHRM using Excel file\\(External File)")
+    public void the_user_wants_to_login_to_orange_hrm_using_excel_file_external_file() throws IOException {
+        Driver.getDriver().get(ConfigurationsReader.getProperties("OrangeHRMTest"));
+        //File path is absolute path
+        String filePath="C:\\Users\\oralr\\IdeaProjects\\RenastechTulip\\04_CucumberBDD\\src\\test\\resources\\externalFile.xlsx";
+        FileInputStream fileInputStream=new FileInputStream(filePath); //We are uploading file here
+        XSSFWorkbook workbook=new XSSFWorkbook(fileInputStream); // We are opening the excel file here
+        XSSFSheet sheet= workbook.getSheet("Sheet1"); //We are opening Sheet1 here
+
+
+
     }
 
 
