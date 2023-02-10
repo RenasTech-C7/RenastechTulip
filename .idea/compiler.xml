@@ -7,10 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="04_CucumberBDD" />
+        <module name="05_DATABASE_JDBC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="04_CucumberBDD" target="1.8" />
+      <module name="DataBase" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -5,8 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/01_HTML/01_HTML.iml" filepath="$PROJECT_DIR$/01_HTML/01_HTML.iml" />
       <module fileurl="file://$PROJECT_DIR$/02_JAVA/02_JAVA.iml" filepath="$PROJECT_DIR$/02_JAVA/02_JAVA.iml" />
       <module fileurl="file://$PROJECT_DIR$/03_SeleniumTestNG/03_SeleniumTestNG.iml" filepath="$PROJECT_DIR$/03_SeleniumTestNG/03_SeleniumTestNG.iml" />
-      <module fileurl="file://$PROJECT_DIR$/04_CucumberBDD/04_CucumberBDD.iml" filepath="$PROJECT_DIR$/04_CucumberBDD/04_CucumberBDD.iml" />
-      <module fileurl="file://$PROJECT_DIR$/05_DATABASE_JDBC/05_DATABASE_JDBC.iml" filepath="$PROJECT_DIR$/05_DATABASE_JDBC/05_DATABASE_JDBC.iml" />
       <module fileurl="file://$PROJECT_DIR$/06_API/06_API.iml" filepath="$PROJECT_DIR$/06_API/06_API.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/RenastechTulip.iml" filepath="$PROJECT_DIR$/.idea/RenastechTulip.iml" />
     </modules>
