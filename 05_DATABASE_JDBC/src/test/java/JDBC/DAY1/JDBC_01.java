@@ -23,9 +23,28 @@ public class JDBC_01 {
         System.out.println("First column value: " + resultSet.getString(1));
         System.out.println("The phone number in first row: " + resultSet.getString("phone_number"));
 
-         /* connection.close();
-          statement.close();
-          resultSet.close();*/
+
+
+        //bring second row's first_name and last_name
+        resultSet.next();
+        System.out.println("First name: " + resultSet.getString("first_name") + "\n" + "Last Name: " +
+                resultSet.getString(3));
+
+
+
+          //bring all information of third row
+        resultSet.next();
+        //we can not get all the column name's size with resultSet.getFetchSize();, we need to use ResultSetMetadata
+        //resultSet.getFetchSize();
+        for (int i=1 ; i<=11 ; i++){
+            System.out.print(resultSet.getString(i));
+            System.out.print(" ");
+        }
+
+
+        connection.close();
+        statement.close();
+        resultSet.close();
 
     }
 }
