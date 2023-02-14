@@ -49,4 +49,50 @@ public class DatabaseUtil {
          return resultSet;
 
     }
+
+    public static int getCountColumn(){
+        int columnCount=0;
+        try {
+            ResultSetMetaData resultSetMetaData=resultSet.getMetaData();
+            columnCount=resultSetMetaData.getColumnCount();
+        }catch (SQLException s){
+            System.out.println("An error occured while getting column count");
+        }
+        return  columnCount;
+
+    }
+
+    public static void getAllData(){
+
+        try{
+            int columnCount=getCountColumn();
+            resultSet.beforeFirst();
+            while (resultSet.next()){
+                for (int i=1 ; i<=columnCount; i++){
+                    System.out.print(resultSet.getString(i) + "\t" + "\t");
+                }
+                System.out.println();
+            }
+            resultSet.beforeFirst();
+        }catch (SQLException e){
+            System.out.println("An error occurred");
+        }
+
+    }
+     public static ResultSet updateQuery(String query){
+         try {
+             statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+             int resultSet=statement.executeUpdate(query);
+             if (resultSet>0){
+                 System.out.println("Updated or Inserted");
+             }else {
+                 System.out.println("Nothing has changed");
+             }
+         }catch (SQLException e){
+             System.out.println("An error occurred while executing query");
+         }
+         return resultSet;
+
+     }
+
 }
