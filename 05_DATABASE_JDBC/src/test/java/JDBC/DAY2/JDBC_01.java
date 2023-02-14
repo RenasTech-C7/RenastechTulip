@@ -112,7 +112,50 @@ public class JDBC_01 {
         while (resultSet.next()){
             System.out.println(resultSet.getString("Country_name"));
         }
+        //I'm in first row
+        resultSet.first();
+        //i'm in last row
+        resultSet.last();
+        System.out.println(resultSet.getRow());
+        System.out.println("Country ID: " +resultSet.getString(1) + "\n"
+                + "Country Name: " + resultSet.getString("Country_name"));
+        //cursor will bottom of last row
+        resultSet.afterLast();
+        /*System.out.println("Country ID: " +resultSet.getString(1) + "\n"
+                + "Country Name: " + resultSet.getString("Country_name"));*/
+        resultSet.next();
+        resultSet.previous();
+        //it does not matter how many times we use resulSet.next() after resultSet.afterLast().
+        //it'll bring last row values if we use resultSet.previous()
+        System.out.println("Country ID: " +resultSet.getString(1) + "\n"
+                + "Country Name: " + resultSet.getString("Country_name"));
+        //i'm in first row
+        resultSet.first();
 
+        System.out.println("------------Print country names from last row to first row----------");
+        resultSet.afterLast();
+        while (resultSet.previous()){
+            System.out.println("Row Number: "+ resultSet.getRow() + " Country Name: " + resultSet.getString("Country_name"));
+        }
+        System.out.println();
+        //it'll move to exact row
+        resultSet.absolute(2);
+        System.out.println("Country ID: " +resultSet.getString(1) + "\n"
+                + "Country Name: " + resultSet.getString("Country_name"));
+
+        //move to first row
+        resultSet.first();
+        //i'll check if you're in first row or not
+        System.out.println(resultSet.isFirst());
+
+        //it'll check if you're in last row ot not
+        resultSet.last();
+        System.out.println(resultSet.isLast());
+
+        //we have also other checks
+        resultSet.isAfterLast();
+        resultSet.isBeforeFirst();
 
     }
+
 }

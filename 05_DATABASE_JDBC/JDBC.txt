@@ -13,7 +13,7 @@ JDBC offers programming level interface that handles mechanic of Java applicatio
 
  JAVA APP <----------------JDBC----------->Actual Database
  JDBC does not provide actual implementation
- Each RDMS(like Oracle, MySQL, PostGress) will provide actual implementation that is known as a driver
+ Each RDMS(like Oracle, MySQL, PostGresss) will provide actual implementation that is known as a driver
 
  We use maven dependency to import that driver
 <!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8 -->

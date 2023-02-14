@@ -22,8 +22,8 @@ public class BrowserUtils {
     }
 
 
-    public static void selectFromDropdown(WebElement element, String text ){
-        Select select= new Select(element);
+    public static void selectFromDropdown(WebElement element1, String text ){
+        Select select= new Select(element1);
         select.selectByVisibleText(text);
 
         try{
