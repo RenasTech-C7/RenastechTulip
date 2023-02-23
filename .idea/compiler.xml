@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="_05_DATABASE_JDBC" />
         <module name="04_CucumberBDD" />
-        <module name="05_DATABASE_JDBC" />
+        <module name="06_API" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

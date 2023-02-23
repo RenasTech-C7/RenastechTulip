@@ -4,10 +4,11 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/04_CucumberBDD/pom.xml" />
         <option value="$PROJECT_DIR$/05_DATABASE_JDBC/DataBase/pom.xml" />
         <option value="$PROJECT_DIR$/_05_DATABASE_JDBC/pom.xml" />
         <option value="$PROJECT_DIR$/05_DATABASE_JDBC/pom.xml" />
+        <option value="$PROJECT_DIR$/04_CucumberBDD/pom.xml" />
+        <option value="$PROJECT_DIR$/06_API/pom.xml" />
       </list>
     </option>
   </component>
