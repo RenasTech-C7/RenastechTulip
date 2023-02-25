@@ -39,6 +39,58 @@ public class GETBooks {
         //Then
         response.then().assertThat().statusCode(200);
 
+        //Print response body
+        System.out.println(response.getBody().asString());
+
+        //Get all headers
+        System.out.println(response.getHeaders());
+
+        //[{"id":1,"name":"The Russian","type":"fiction","available":true},
+        // {"id":2,"name":"Just as I Am","type":"non-fiction","available":false}]
+
+        String actualsecondBookName=response.jsonPath().getString("[1].name");
+        String actualsecondBookId=response.jsonPath().getString("[1].id");
+        String expectedSecondBookName="Just as I Am";
+        String expectedSecondBookId="2";
+
+        System.out.println("Second Book Id is :"+actualsecondBookId+", Second Book Name is :"+actualsecondBookName);
+
+        //Using line below we can perform same action as above
+//        given().queryParam("limit",2).when().get(URL)
+//                .then().assertThat().statusCode(200);
+
+        Assert.assertEquals(expectedSecondBookId,actualsecondBookId);
+        Assert.assertEquals(expectedSecondBookName,actualsecondBookName);
+
+    }
+
+    @Test(description = "Given a baseURI When we make the GET call to /books and query parameters as type=fiction and limit=1 Then Verify Status Code")
+    void userRetrieveListofBooksMultipleParameters(){
+
+        //Given
+        RequestSpecification request=given()
+                .queryParams("type","fiction","limit",1);
+        //When
+        Response response=request.when().get(URL);
+
+        //Then
+        response.then().assertThat().statusCode(200);
+        System.out.println(response.getBody().asString());
+
+        String type= response.jsonPath().getString("[0].type");
+        System.out.println(type);
+        Assert.assertEquals(type,"fiction");
+
+        String bookId=response.jsonPath().getString("[0].id");
+        System.out.println(bookId);
+        Assert.assertEquals(bookId,"1");
+
+        String isAvailable=response.jsonPath().getString("[0].available");
+        System.out.println(isAvailable);
+        Assert.assertEquals(isAvailable,"true");
+
+        String index0=response.jsonPath().getString("[0]");
+        System.out.println(index0);
     }
 
 }
