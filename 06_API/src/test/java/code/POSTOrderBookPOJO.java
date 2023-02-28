@@ -105,7 +105,7 @@ public class POSTOrderBookPOJO {
                 .body(updateOrderJSON);
 
 
-        Response updateOrderResponse=updateBookRequest.when().patch("/order/{orderId}");
+        Response updateOrderResponse=updateBookRequest.when().patch("/orders/{orderId}");
 
 
         updateOrderResponse.then().assertThat().statusCode(204);
