@@ -8,12 +8,19 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
 public class POSTOrderBookPOJO {
-    String baseURI= RestAssured.baseURI="https://simple-books-api.glitch.me";
+    //String baseURI= RestAssured.baseURI="https://simple-books-api.glitch.me";
+
+    @BeforeClass
+    public void setup(){
+        //We are setting baseURI here once. It will be applied to all of the test cases in this class
+        RestAssured.baseURI="https://simple-books-api.glitch.me";
+    }
     @Test(description = "Given a baseURI and token When user wants to POST to /orders Then Verify Status code is 201")
     void orderBook() {
 

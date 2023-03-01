@@ -4,6 +4,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -13,8 +14,13 @@ public class GETBooks {
     String URL="https://simple-books-api.glitch.me/books";
 
     //This is second way to provide baseURI
-    String baseURI=RestAssured.baseURI="https://simple-books-api.glitch.me";
+  //  String baseURI=RestAssured.baseURI="https://simple-books-api.glitch.me";
 
+    @BeforeClass
+    public void setup(){
+        //We are setting baseURI here once. It will be applied to all of the test cases in this class
+        RestAssured.baseURI="https://simple-books-api.glitch.me";
+    }
     @Test(description = "Give a baseURI When we make GET call to /books Then Verify status code is 200 ")
     public void ValidateStatusCode(){
         //Given and When
